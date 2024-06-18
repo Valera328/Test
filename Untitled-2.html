@@ -1,0 +1,18 @@
+
+const inputClick = () => console.log("Click")
+const mouseOver = () => console.log("Mouse Over")
+
+const Text = "Валерчик"
+
+const element = (
+<div className = "name">
+    <h5>Куршук Валерий</h5>
+    
+<input placeholder = {Text}
+    onClick = {inputClick} 
+    onMouseEnter = {mouseOver}/>
+    <p>{Text == "Валерчи" ? "Yes" : "No"}</p>
+</div>
+)
+const app = document.getElementById("app")
+ReactDOM.render(element, app)
